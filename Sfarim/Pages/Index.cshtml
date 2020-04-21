@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form>
+    <select asp-for="SelectedMasechta" asp-items="Model.Masectos"></select>
+    <input type="submit" value="Update" />
+</form>
